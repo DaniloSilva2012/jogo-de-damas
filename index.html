@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Damas</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main>
+    <section id="tabuleiro">
+      
+      <svg id="tabuleiroPecas" width="100%" height="100%">
+        
+         <rect id="a1" data-position="1" x="50" y="0" width="50" height="50" fill="black" />
+         <rect id="a2" data-position="2" x="150" y="0" width="50" height="50" fill="black" />
+         <rect id="a3" data-position="3" x="250" y="0" width="50" height="50" fill="black" />
+         <rect id="a4" data-position="4" x="350" y="0" width="50" height="50" fill="black" />
+
+         <rect id="b5" data-position="5" x="0" y="50" width="50" height="50" fill="black" />
+         <rect id="b6" data-position="6" x="100" y="50" width="50" height="50" fill="black" />
+         <rect id="b7" data-position="7" x="200" y="50" width="50" height="50" fill="black" />
+         <rect id="b8" data-position="8" x="300" y="50" width="50" height="50" fill="black" />
+         
+         <rect id="c9" data-position="9" x="50" y="100" width="50" height="50" fill="black" />
+         <rect id="c10" data-position="10" x="150" y="100" width="50" height="50" fill="black" />
+         <rect id="c11" data-position="11" x="250" y="100" width="50" height="50" fill="black" />
+         <rect id="c12" data-position="12" x="350" y="100" width="50" height="50" fill="black" />
+          
+         <rect id="d13" data-position="13" x="0" y="150" width="50" height="50" fill="black" />
+         <rect id="d14" data-position="14" x="100" y="150" width="50" height="50" fill="black" />
+         <rect id="d15" data-position="15" x="200" y="150" width="50" height="50" fill="black" />
+         <rect id="d16" data-position="16" x="300" y="150" width="50" height="50" fill="black" />
+         
+         <rect id="e17" data-position="17" x="50" y="200" width="50" height="50" fill="black" />
+         <rect id="e18" data-position="18" x="150" y="200" width="50" height="50" fill="black" />
+         <rect id="e19" data-position="19" x="250" y="200" width="50" height="50" fill="black" />
+         <rect id="e20" data-position="20" x="350" y="200" width="50" height="50" fill="black" />
+
+         <rect id="f21" data-position="21" x="0" y="250" width="50" height="50" fill="black" />
+         <rect id="f22" data-position="22" x="100" y="250" width="50" height="50" fill="black" />
+         <rect id="f23" data-position="23" x="200" y="250" width="50" height="50" fill="black" />
+         <rect id="f24" data-position="24" x="300" y="250" width="50" height="50" fill="black" />
+
+         <rect id="g25" data-position="25" x="50" y="300" width="50" height="50" fill="black" />
+         <rect id="g26" data-position="26" x="150" y="300" width="50" height="50" fill="black" />
+         <rect id="g27" data-position="27" x="250" y="300" width="50" height="50" fill="black" />
+         <rect id="g28" data-position="28" x="350" y="300" width="50" height="50" fill="black" />
+        
+         <rect id="h29" data-position="29" x="0" y="350" width="50" height="50" fill="black" />
+         <rect id="h30" data-position="30" x="100" y="350" width="50" height="50" fill="black" />
+         <rect id="h31" data-position="31" x="200" y="350" width="50" height="50" fill="black" />
+         <rect id="h32" data-position="32" x="300" y="350" width="50" height="50" fill="black" />
+
+         <!-- peças -->
+
+         <circle id="p1" data-position="1" data-color="b" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="brown" />
+         <circle id="p2" data-position="2" data-color="b" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="brown" />
+         <circle id="p3" data-position="3" data-color="b" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="brown" />
+         <circle id="p4" data-position="4" data-color="b" data-type="normal" r="25" stroke="gray" stroke-width="2" fill="brown" />
+         <circle id="p5" data-position="5" data-color="b" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="brown" />
+         <circle id="p6" data-position="6" data-color="b" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="brown" />
+         <circle id="p7" data-position="7" data-color="b" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="brown" />
+         <circle id="p8" data-position="8" data-color="b" data-type="normal" r="25" stroke="gray" stroke-width="2" fill="brown" />
+         <circle id="p9" data-position="9" data-color="b" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="brown" />
+         <circle id="p10" data-position="10" data-color="b" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="brown" />
+         <circle id="p11" data-position="11" data-color="b" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="brown" />
+         <circle id="p12" data-position="12" data-color="b" data-type="normal" r="25" stroke="gray" stroke-width="2" fill="brown" />
+         <!-- d -->
+         <!-- e -->
+         <circle id="p13" data-position="21" data-color="w" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="white" />
+         <circle id="p14" data-position="22" data-color="w" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="white" />
+         <circle id="p15" data-position="23" data-color="w" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="white" />
+         <circle id="p16" data-position="24" data-color="w" data-type="normal" r="25" stroke="gray" stroke-width="2" fill="white" />
+         <circle id="p17" data-position="25" data-color="w" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="white" />
+         <circle id="p18" data-position="26" data-color="w" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="white" />
+         <circle id="p19" data-position="27" data-color="w" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="white" />
+         <circle id="p20" data-position="28" data-color="w" data-type="normal" r="25" stroke="gray" stroke-width="2" fill="white" />
+         <circle id="p21" data-position="29" data-color="w" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="white" />
+         <circle id="p22" data-position="30" data-color="w" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="white" />
+         <circle id="p23" data-position="31" data-color="w" data-type="normal" r="25" stroke="gray" stroke-width="1" fill="white" />
+         <circle id="p24" data-position="32" data-color="w" data-type="normal" r="25" stroke="gray" stroke-width="2" fill="white" />
+
+         Sorry, your browser does not support inline SVG.
+         Desculpe, seu navegador não tem suporte a SVG inline.
+      </svg> 
+
+    </section>
+    <div id="dadosPartida">
+      <table>
+        <thead>
+          <tr>
+            <td>Jogador</td>
+            <td class="textCenter">Nº de jogadas</td>
+            <td class="textCenter">Nº de peças</td>
+            <td class="textCenter">Vitórias</td>
+          </tr>
+        </thead>
+        <tbody>        
+          <tr>
+            <td>Branca</td>
+            <td class="textCenter" id="jogadasBranca">0</td>
+            <td class="textCenter" id="pecasBranca">0</td>
+            <td class="textCenter" id="vitoriasBranca">0</td>
+          </tr>
+          <tr>
+            <td>Preta</td>
+            <td class="textCenter" id="jogadasPreta">0</td>
+            <td class="textCenter" id="pecasPreta">0</td>
+            <td class="textCenter" id="vitoriasPreta">0</td>
+          </tr>
+          <tr class="important">
+            <td>Total</td>
+            <td colspan="3" class="" id="jogadasTotal">0</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="alert">
+            <td colspan="4" class="textColor-red" id="jogador"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/*
+  reset and typografy
+*/
+
+html, body, main, section, head {
+  margin: 0;
+  border: 0;
+  padding: 0;
+} 
+
+body{
+  font-size: 11px;
+}
+
+
+/*
+  classes genéricas
+*/
+.textCenter{
+  text-align: center;
+}
+
+.textColor-red{
+  color: red;
+}
+
+/*
+  style
+*/
+
+#tabuleiro {
+position: relative;
+width: 400px;
+height: 400px;
+background: #fff;
+border: 2px solid;
+margin: 10px auto 10px;
+display: block;
+}
+
+circle[data-type="dama"][data-color="w"]{
+  fill: green;  
+}
+
+circle[data-type="dama"][data-color="b"]{
+  fill: yellow;  
+}
+
+circle:hover{
+  stroke: red;
+  fill: blue;
+  cursor: pointer;
+}
+
+rect[selected]:hover{
+  cursor: pointer;
+}
+
+
+#dadosPartida{
+  background: #ccc;
+  display: block;
+  width: 86%;
+  max-width: 400px;
+  margin: 0 auto;
+  clear: both;
+}
+
+#dadosPartida table{
+  width: 100%;
+  padding: 1%;
+}
+
+#dadosPartida thead td{
+  width: 25%;
+}
+
+#dadosPartida .important{
+  background: #333;
+  color: #fefefe;
+}
+
+#dadosPartida .alert{
+  background: #ddd;
+}
+
+
